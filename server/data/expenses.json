@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1780323053375,
+    "amount": 100,
+    "category": "Food",
+    "date": "2026-06-01",
+    "note": "Lunch"
+  },
+  {
+    "id": 1780394021779,
+    "amount": 1000,
+    "category": "Bills",
+    "date": "2026-06-01",
+    "note": "Gas"
+  },
+  {
+    "id": 1780394336743,
+    "amount": 23232,
+    "category": "Transport",
+    "date": "2026-06-02",
+    "note": "CAB"
+  },
+  {
+    "id": 1780395390422,
+    "amount": 151515,
+    "category": "Other",
+    "date": "2026-05-20",
+    "note": "FURNITURE"
+  },
+  {
+    "id": 1780397255502,
+    "amount": 20000,
+    "category": "Bills",
+    "date": "2026-05-30",
+    "note": "PEER"
+  },
+  {
+    "id": 1780397872200,
+    "amount": 19900,
+    "category": "Food",
+    "date": "2026-05-26",
+    "note": ""
+  },
+  {
+    "id": 1780398144134,
+    "amount": 38888,
+    "category": "Entertainment",
+    "date": "2026-05-14",
+    "note": "PARK"
+  },
+  {
+    "id": 1780398291765,
+    "amount": 160000,
+    "category": "Food",
+    "date": "2026-06-02",
+    "note": ""
+  }
+]
