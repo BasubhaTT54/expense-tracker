@@ -1,12 +1,6 @@
 import { useEffect, useState } from "react";
 import api from "./services/api";
-import axios from "axios";
 
-const api = axios.create({
-  baseURL: "https://YOUR-RENDER-URL.onrender.com/api"
-});
-
-export default api;
 import ExpenseForm from "./components/ExpenseForm";
 import ExpenseTable from "./components/ExpenseTable";
 import Summary from "./components/Summary";
@@ -66,12 +60,7 @@ function App() {
       return;
     }
 
-    const headers = [
-      "Amount",
-      "Category",
-      "Date",
-      "Note"
-    ];
+    const headers = ["Amount", "Category", "Date", "Note"];
 
     const rows = filteredExpenses.map((expense) => [
       expense.amount,
@@ -91,10 +80,9 @@ function App() {
       )
     ].join("\n");
 
-    const blob = new Blob(
-      [csvContent],
-      { type: "text/csv;charset=utf-8;" }
-    );
+    const blob = new Blob([csvContent], {
+      type: "text/csv;charset=utf-8;"
+    });
 
     const url = URL.createObjectURL(blob);
 
@@ -186,13 +174,8 @@ function App() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-6">
-          <CategorySummary
-            expenses={filteredExpenses}
-          />
-
-          <ExpenseChart
-            expenses={filteredExpenses}
-          />
+          <CategorySummary expenses={filteredExpenses} />
+          <ExpenseChart expenses={filteredExpenses} />
         </div>
 
         <div className="mt-6">
