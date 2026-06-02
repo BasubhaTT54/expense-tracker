@@ -138,4 +138,3 @@ DELETE /api/expenses/:id
 * Unit Testing
 * Toast Notifications
 
-## Deployment
