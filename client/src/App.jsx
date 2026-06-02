@@ -1,6 +1,12 @@
 import { useEffect, useState } from "react";
 import api from "./services/api";
+import axios from "axios";
 
+const api = axios.create({
+  baseURL: "https://YOUR-RENDER-URL.onrender.com/api"
+});
+
+export default api;
 import ExpenseForm from "./components/ExpenseForm";
 import ExpenseTable from "./components/ExpenseTable";
 import Summary from "./components/Summary";
